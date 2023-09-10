@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>PHero Tube API</title>
+
+    <!-- CSS Frameworks -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Vanilla CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google font Inter  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- tailwind Custom class  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF1F3D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container mx-auto flex flex-col md:flex-row items-center md:justify-between gap-6 px-4 py-8">
+            <div><a href="index.html"><img src="./img/Logo.png" alt="Logo"></a></div>
+            <div><button class="bg-primary py-2 px-4 text-white font-medium rounded-md lg:-ml-24 md:-ml-12"
+                    onclick="window.location.href='index.html'">Home Page</button></div>
+            <div><button class="bg-primary text-white py-1 px-4 font-medium rounded-md">Blog</button></div>
+        </div>
+        <div class="container mx-auto px-4">
+            <hr>
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto mb-10">
+            <!-- Questions 1 -->
+            <div class="border border-base-300 bg-base-200 my-6 rounded-md mx-5">
+                <div class="text-xl font-medium p-5">
+                    <h1 class="text-4xl my-6 font-semibold">Discuss the scope of var, let, and const</h1>
+                    <img class="w-full rounded-md" src="./img/var, let, const.png" alt="Var, Let and const variable">
+                </div>
+                <div class="p-5 text-xl leading-10">
+                    <p>
+                        var declarations are globally scoped or function scoped while let and const are block scoped.
+                        var variables can be updated and re-declared within its scope. </p>
+                    <p>let variables can be updated but not re-declared. </p>
+                    <p>const variables can neither be updated nor re-declared.</p>
+
+                    <p>All the variables are all hoisted to the top of their scope. But while var variables are
+                        initialized with undefined, let and const variables are not initialized.
+                        var and let can be declared without being initialized, const must be initialized during
+                        declaration</p>
+
+                </div>
+            </div>
+
+            <!-- Questions 2 -->
+            <div class="border border-base-300 bg-base-200 my-6 rounded-md mx-5">
+                <div class="text-xl font-medium p-5">
+                    <h1 class="text-4xl my-6 font-semibold">Tell us the use cases of null and undefined</h1>
+                    <img class="w-full rounded-md" src="./img/Null & Undefined.png" alt="Var, Let and const variable">
+                </div>
+                <div class="p-5 text-xl leading-10">
+                    <p class="text-3xl"><b>null:</b></p>
+                    <li>Null means an empty value or a blank value</li>
+                    <li>It is often used to indicate that a variable or property does not currently have a meaningful
+                        value or that a value has been explicitly removed or reset to nothing.</li>
+                    <p><strong>Use cases:</strong></p>
+                    <li>Initializing variables or properties to indicate that they have no value yet.</li>
+                    <li>As a placeholder for missing or empty data</li>
+                    <li>As a return value to indicate that a function did not produce a meaningful result.</li>
+
+                    <p class="text-3xl mt-5"><b>undefined:</b></p>
+                    <li>Undefined means the variable has been declared, but its value has not been assigned</li>
+                    <p><strong>Use cases:</strong></p>
+                    <li>Accessing object properties that do not exist.</li>
+                    <li>Function parameters that have not been provided a value by the caller.</li>
+                    <li>Variables or properties that have been explicitly set to undefined to indicate their undefined
+                        state.</li>
+
+                </div>
+            </div>
+
+            <!-- Questions 3 -->
+            <div class="border border-base-300 bg-base-200 my-6 rounded-md mx-5">
+                <div class="text-xl font-medium p-5">
+                    <h1 class="text-4xl my-6 font-semibold">What do you mean by REST API?</h1>
+                    <img class="w-full rounded-md" src="./img/REST API.png" alt="Var, Let and const variable">
+                </div>
+                <div class="p-5 text-xl leading-10">
+                    <p>Application Programme Interface abbreviated as API which is a software intermediary that allows
+                        two applications to talk
+                        to each other.</p>
+                    <p><b>Example : </b> If user wants to book train tickets, web application shows the departure time,
+                        stations like that all the informations,
+                        when we look in this from the developer side, developer wants to display all the train schedule
+                        informations in the web
+                        application, then developer use the APIs to get these train informations from the web server
+                        where all the train details
+                        and informations are stored. Then developers can retrieve data from the web server using the
+                        APIs to display in the web
+                        application.</p>
+                    <p><b>What is REST API? : </b> REpresentational State Transfer abbreviated to REST. It is an API
+                        that follows a set of rules for an application and
+                        services to communicate with each other.
+                        <br>
+                        REST APIs work by fielding requests for a resource and returning all relevant information about
+                        the resource, translated
+                        into a format that clients can easily interpret (this format is determined by the API receiving
+                        requests). Clients can
+                        also modify items on the server and even add new items to the server through a REST API.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

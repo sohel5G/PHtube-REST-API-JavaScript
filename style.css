@@ -1,0 +1,9 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.active{
+    background-color: #FF1F3D!important;
+    color: white!important;
+}
+
